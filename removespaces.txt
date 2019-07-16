@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+int count=0,i;
+char str[100];
+gets(str);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]!=' ')
+{
+str[count++]=str[i];
+}
+}
+str[count]='\0';
+printf("%s",str);
+}
